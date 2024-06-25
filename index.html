@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Goč</title>
+         <link rel="stylesheet" href="stilovi.css">
+         
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Početna</a></li>
+        <li><a href="igraci.html">Igrači</a></li>
+        <li><a href="mvp.html">MVP</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="kontakat.html">Kontakt</a></li>
+        <li><a href="u-14.html">u-14</a></li>
+        <li><a href="uspesi.html">Uspesi</a></li>
+    </ul>
+      
+
+
+            <h1> RK Goč Merkur</h1>
+            <p class="centralno">Saznajte nešto o dečijem rukometnom klubu iz Vrnjačke Banje: njegovim disciplinama, dostignućima i svim potrebnim informacijama.</p>
+            <img class="logo" src="goc.png" alt="Ne mogu da nadjem sliku">
+           
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var nav = document.querySelector('header nav');
+                    var toggle = document.createElement('button');
+                    toggle.textContent = 'Menu';
+                    toggle.addEventListener('click', function() {
+                        nav.classList.toggle('open');
+                    });
+                    document.querySelector('header').insertBefore(toggle, nav);
+                });
+            </script>
+               </body>
+</html>
